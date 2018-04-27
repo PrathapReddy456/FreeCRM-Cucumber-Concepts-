@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.277051">
+<testcase classname="Add New Contact" name="Home page with Login" time="29.277051">
+<system-out><![CDATA[Given The home page Url.....................................................passed
+When User is on CRM page the page title is FreeCRM..........................passed
+Then User entered Username and Password.....................................passed
+Then User Clicks on login button............................................passed
+Then Now user in home page the title is CRMPRO..............................passed
+Then Moves to new task page.................................................passed
+Then User enters title  and select deadline_day, deadline_month,deadline_year,deadline_hour,deadline_minute,status,completion%,Type, case, ownerassinedto..passed
+Then Click on Save..........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

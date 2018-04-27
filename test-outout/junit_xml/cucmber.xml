@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="41.545672">
+<testcase classname="Add New Contact" name="Home page with Login" time="36.543556">
+<failure message="org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified&#10;  (Session info: chrome=65.0.3325.181)&#10;  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html&#10;Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'&#10;System info: host: 'RITHWIK-PC', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\RITHWIK\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}&#10;Session ID: 4433b6624a9741c92273cb128b23b530&#10;*** Element info: {Using=css selector, value=css=a[href='https://www.freecrm.com/system/index.cfm?action=contact']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)&#13;&#10;&#9;at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)&#13;&#10;&#9;at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)&#13;&#10;&#9;at newcontact.NewContactStepDef.moves_to_new_contact_page(NewContactStepDef.java:68)&#13;&#10;&#9;at ✽.Then Moves to new contact page(NewContact.feature:11)&#13;&#10;"><![CDATA[Given The home page Url.....................................................passed
+When User entered into CRM page the page title is FreeCRM...................passed
+Then User entered "naveenk".................................................passed
+Then Entered "test@123".....................................................passed
+Then Click on login button..................................................passed
+Then User entered into home page the title is CRMPRO........................passed
+Then Moves to new contact page..............................................failed
+Then User select"Mr." and enter "Prathap","Raj","<Lat Name>","sr."..........skipped
+Then Select Receive Email and AllowCalls as No..............................skipped
+Then Click on Save..........................................................skipped
+Then Close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.InvalidSelectorException: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RITHWIK-PC', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.37.544315 (730aa6a5fdba15..., userDataDir: C:\Users\RITHWIK\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 65.0.3325.181, webStorageEnabled: true}
+Session ID: 4433b6624a9741c92273cb128b23b530
+*** Element info: {Using=css selector, value=css=a[href='https://www.freecrm.com/system/index.cfm?action=contact']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at newcontact.NewContactStepDef.moves_to_new_contact_page(NewContactStepDef.java:68)
+	at ✽.Then Moves to new contact page(NewContact.feature:11)
+]]></failure>
+</testcase>
+<testcase classname="Add New Contact" name="Home page with Login 2" time="5.002116">
+<failure message="org.openqa.selenium.SessionNotCreatedException: session not created exception&#10;from disconnected: received Inspector.detached event&#10;  (Session info: chrome=65.0.3325.181)&#10;  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 4.40 seconds&#10;Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'&#10;System info: host: 'RITHWIK-PC', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'&#10;Driver info: driver.version: ChromeDriver&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)&#13;&#10;&#9;at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)&#13;&#10;&#9;at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)&#13;&#10;&#9;at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)&#13;&#10;&#9;at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)&#13;&#10;&#9;at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)&#13;&#10;&#9;at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)&#13;&#10;&#9;at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)&#13;&#10;&#9;at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)&#13;&#10;&#9;at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:132)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;&#10;&#9;at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;&#10;&#9;at newcontact.NewContactStepDef.the_home_page_Url(NewContactStepDef.java:26)&#13;&#10;&#9;at ✽.Given The home page Url(NewContact.feature:5)&#13;&#10;"><![CDATA[Given The home page Url.....................................................failed
+When User entered into CRM page the page title is FreeCRM...................skipped
+Then User entered "naveenk".................................................skipped
+Then Entered "test@123".....................................................skipped
+Then Click on login button..................................................skipped
+Then User entered into home page the title is CRMPRO........................skipped
+Then Moves to new contact page..............................................skipped
+Then User select"Sir" and enter "Ardar","Cotton","<Lat Name>","Sr.".........skipped
+Then Select Receive Email and AllowCalls as No..............................skipped
+Then Click on Save..........................................................skipped
+Then Close the browser......................................................skipped
+
+StackTrace:
+org.openqa.selenium.SessionNotCreatedException: session not created exception
+from disconnected: received Inspector.detached event
+  (Session info: chrome=65.0.3325.181)
+  (Driver info: chromedriver=2.37.544315 (730aa6a5fdba159ac9f4c1e8cbc59bf1b5ce12b7),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 4.40 seconds
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'RITHWIK-PC', ip: '192.168.1.46', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: driver.version: ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:209)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:132)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+	at newcontact.NewContactStepDef.the_home_page_Url(NewContactStepDef.java:26)
+	at ✽.Given The home page Url(NewContact.feature:5)
+]]></failure>
+</testcase>
+</testsuite>
