@@ -9,7 +9,7 @@ Then Entered "<Password>"
 Then Click on login button
 Then User entered into home page the title is CRMPRO
 Then Moves to new contact page
-Then User select"<title>" and enter "<First Name>","<Middle Name>","<Lat Name>","<Suffix>"
+Then User select"<title>" and enter "<First Name>","<Middle Name>","<Last Name>","<Suffix>"
 Then Select Receive Email and AllowCalls as No
 Then Click on Save
 Then Close the browser

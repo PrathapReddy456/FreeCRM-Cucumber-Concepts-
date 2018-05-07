@@ -65,8 +65,8 @@ public class NewContactStepDef {
 	public void moves_to_new_contact_page() {
 		driver.switchTo().frame("mainpanel");
 		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(By.cssSelector("css=a[href='https://www.freecrm.com/system/index.cfm?action=contact']"))).build().perform();
-		driver.findElement(By.cssSelector("css=a[href=\'https://www.freecrm.com/system/index.cfm?action=contact&sub=load&edit=1\']")).click();
+		action.moveToElement(driver.findElement(By.xpath("//*[@id=\'navmenu\']/ul/li[4]/a"))).build().perform();
+		driver.findElement(By.xpath("//*[@id=\'navmenu\']/ul/li[4]/ul/li[1]/a")).click();
 	}
 
 	@Then("^User select\"([^\"]*)\" and enter \"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\",\"([^\"]*)\"$")

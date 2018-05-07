@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="29.277051">
-<testcase classname="Add New Contact" name="Home page with Login" time="29.277051">
-<system-out><![CDATA[Given The home page Url.....................................................passed
-When User is on CRM page the page title is FreeCRM..........................passed
-Then User entered Username and Password.....................................passed
-Then User Clicks on login button............................................passed
-Then Now user in home page the title is CRMPRO..............................passed
-Then Moves to new task page.................................................passed
-Then User enters title  and select deadline_day, deadline_month,deadline_year,deadline_hour,deadline_minute,status,completion%,Type, case, ownerassinedto..passed
-Then Click on Save..........................................................passed
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="1.781195">
+<testcase classname="Free CRM Page Test" name="Validate Home Page" time="1.781195">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.qa.utill.TestBase.Intialization(TestBase.java:44)&#13;&#10;&#9;at cuwithPageStepDef.CucwithPStepDef.the_Home_Page_Url(CucwithPStepDef.java:15)&#13;&#10;&#9;at ✽.Given The Home Page Url(C:/Users/RITHWIK/My_Work2/FreeCRM-Cucumber/src/main/java/com/qa/features/FreeCRM.feature:3)&#13;&#10;"><![CDATA[Given The Home Page Url.....................................................failed
+When User is on home Page...................................................skipped
+Then User enetres Username and password.....................................skipped
+Then User click on Login button.............................................skipped
+Then Main Page is Displayed.................................................skipped
+Then Validadte Main page....................................................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.qa.utill.TestBase.Intialization(TestBase.java:44)
+	at cuwithPageStepDef.CucwithPStepDef.the_Home_Page_Url(CucwithPStepDef.java:15)
+	at ✽.Given The Home Page Url(C:/Users/RITHWIK/My_Work2/FreeCRM-Cucumber/src/main/java/com/qa/features/FreeCRM.feature:3)
+]]></failure>
 </testcase>
 </testsuite>

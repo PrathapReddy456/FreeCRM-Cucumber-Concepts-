@@ -82,9 +82,9 @@ public class NewtaskStepDef {
 		driver.findElement(By.xpath("//*[@id=\'navmenu\']/ul/li[6]/ul/li[1]/a")).click();
 	}
 
-	@Then("^User enters title  and select deadline_day, deadline_month,deadline_year,deadline_hour,deadline_minute,status,completion%,Type, case, ownerassinedto\\.$")
-	public void user_enters_title_and_select_deadline_day_deadline_month_deadline_year_deadline_hour_deadline_minute_status_completion_Type_case_ownerassinedto(
-			DataTable TaskData) {
+	@Then("^User enters new task details$")
+	public void user_enters_new_task_details(DataTable TaskData) {
+			
 		List<List<String>> dealValues = TaskData.raw();
 
 		driver.findElement(By.xpath("//*[@id=\'title\']")).sendKeys(dealValues.get(0).get(0));
@@ -158,9 +158,9 @@ public class NewtaskStepDef {
 
 	}
 
-	/*@Then("^Close the browser$")
+	@Then("^Close the browser$")
 	public void close_the_browser() {
 		driver.close();
-	}*/
+	}
 
 }
