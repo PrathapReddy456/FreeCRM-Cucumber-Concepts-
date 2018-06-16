@@ -1,6 +1,6 @@
 Feature: Add New Deal 
 
-Scenario: Home page with Login 
+Scenario: Home page with Login
 
 	Given The home page Url 
 	When User is on CRM page the page title is FreeCRM 

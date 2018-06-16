@@ -20,6 +20,8 @@ import cucumber.api.java.en.When;
 public class NewDealStepDef {
 	WebDriver driver;
 
+
+
 	@Given("^The home page Url$")
 	public void the_home_page_Url() {
 		System.setProperty("webdriver.chrome.driver", "E:/chromedriver.exe");

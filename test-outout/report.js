@@ -1,85 +1,140 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITHWIK/My_Work2/FreeCRM-Cucumber/src/main/java/com/qa/features/FreeCRM.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/RITHWIK/My_Work2/FreeCRM-Cucumber/FreeCRM_Features/NewDealFeature(Map Object)/NewDeal.feature");
 formatter.feature({
   "line": 1,
-  "name": "Free CRM Page Test",
+  "name": "Add New Deal",
   "description": "",
-  "id": "free-crm-page-test",
+  "id": "add-new-deal",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "line": 2,
-  "name": "Validate Home Page",
+  "line": 3,
+  "name": "Home page with Login",
   "description": "",
-  "id": "free-crm-page-test;validate-home-page",
+  "id": "add-new-deal;home-page-with-login",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 3,
-  "name": "The Home Page Url",
+  "line": 5,
+  "name": "The home page Url",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 4,
-  "name": "User is on home Page",
+  "line": 6,
+  "name": "User is on CRM page the page title is FreeCRM",
   "keyword": "When "
 });
 formatter.step({
-  "line": 5,
-  "name": "User enetres Username and password",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 6,
-  "name": "User click on Login button",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 7,
-  "name": "Main Page is Displayed",
+  "name": "User entered Username and Password",
+  "rows": [
+    {
+      "cells": [
+        "Username",
+        "Password"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
+        "naveenk",
+        "test@123"
+      ],
+      "line": 9
+    }
+  ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "Validadte Main page",
+  "line": 11,
+  "name": "User Clicks on login button",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "CucwithPStepDef.the_Home_Page_Url()"
+formatter.step({
+  "line": 12,
+  "name": "Now user in home page the title is CRMPRO",
+  "keyword": "Then "
 });
+formatter.step({
+  "line": 13,
+  "name": "Moves to New Deal page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 14,
+  "name": "User enters new deal details",
+  "rows": [
+    {
+      "cells": [
+        "Title",
+        "Company",
+        "Probability %",
+        "Owner",
+        "Status",
+        "Reports"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "GoodDeal",
+        "Accenture",
+        "50",
+        "Naveen K (naveenk)",
+        "Closed",
+        "Exclude from reports"
+      ],
+      "line": 17
+    },
+    {
+      "cells": [
+        "BadDeal",
+        "Cognizant",
+        "40",
+        "Naveen K (naveenk)",
+        "Closed",
+        "Exclude from reports"
+      ],
+      "line": 18
+    }
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "Close the browser",
+  "keyword": "Then "
+});
+formatter.match({});
 formatter.result({
-  "duration": 1781194758,
-  "error_message": "java.lang.NullPointerException\r\n\tat com.qa.utill.TestBase.Intialization(TestBase.java:44)\r\n\tat cuwithPageStepDef.CucwithPStepDef.the_Home_Page_Url(CucwithPStepDef.java:15)\r\n\tat ✽.Given The Home Page Url(C:/Users/RITHWIK/My_Work2/FreeCRM-Cucumber/src/main/java/com/qa/features/FreeCRM.feature:3)\r\n",
-  "status": "failed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "CucwithPStepDef.user_is_on_home_Page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "CucwithPStepDef.user_enetres_Username_and_password()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "CucwithPStepDef.user_click_on_Login_button()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "CucwithPStepDef.main_Page_is_Displayed()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "CucwithPStepDef.validadte_Main_page()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

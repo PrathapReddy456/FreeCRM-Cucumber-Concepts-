@@ -1,9 +1,9 @@
 package newDeal;
 
 import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
@@ -13,8 +13,8 @@ import cucumber.api.junit.Cucumber;
 		glue={"newDeal"},
 		monochrome= true,
 		strict = true,
-		dryRun= false
+		dryRun= true
 		)
-public class NewDealRunner {
+public class NewDealRunner{
 
 }

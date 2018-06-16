@@ -1,7 +1,6 @@
 package tagging;
 
 import org.junit.runner.RunWith;
-
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
@@ -24,6 +23,6 @@ import cucumber.api.junit.Cucumber;
  
  Ignore ~
  */
-public class TaggingRunner {
+public class TaggingRunner  {
 
 }

@@ -1,3 +1,12 @@
-BDDCuc\FreeCRM_Cucumber\AppTest.class
-BDDCuc\FreeCRM_Cucumber\FreeCRM1Runner.class
+hooks\HooksRunner.class
 BDDCuc\FreeCRM_Cucumber\FreeCRM1StepDef.class
+newDeal\NewDealStepDef.class
+newcontact\NewContactRunner.class
+hooks\HooksStepdef.class
+newDeal\NewDealRunner.class
+tagging\TaggingStepDef.class
+BDDCuc\FreeCRM_Cucumber\FreeCRM1Runner.class
+tagging\TaggingRunner.class
+newcontact\NewContactStepDef.class
+newTask\NewtaskStepDef.class
+newTask\NewTaskRunner.class
